@@ -1,0 +1,8 @@
+.hide {
+  display: none;
+}
+
+.register-div {
+  display: flex;
+  flex-direction: column;
+}
