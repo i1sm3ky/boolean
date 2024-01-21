@@ -73,7 +73,7 @@ function App() {
     const contract = await client.getContractInstance(contractSource, { contractAddress });
     const calledSet = await contract.call(func, args, { amount: 0 }).catch((e) => console.error(e));
 
-    return decodedSet;
+    return calledSet;
   }
 
   window.addEventListener("load", async () => {
